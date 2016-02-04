@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace LanTime
+namespace Lantime
 {
     public class BundleConfig
     {

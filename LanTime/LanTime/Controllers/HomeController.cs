@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace LanTime.Controllers
+namespace Lantime.Controllers
 {
     public class HomeController : Controller
     {

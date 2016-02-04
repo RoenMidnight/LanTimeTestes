@@ -1,20 +1,20 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
-using LanTime.Controllers;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace LanTime.Controllers
+
+namespace Lantime.Models
 {
     public class Ponto
     {
-        public int         Codig_Pont { get; set; }
-
-        [ForeignKey("Funcionario")]
-        public Funcionario Funci_Pont { get; set; }
-
-        public DateTime    Datap_Pont { get; set; }
-        public String      Horap_Pont { get; set;}
+        public Ponto()
+        {
+            Func_Pont = new Funcionario();
+        }
+        public int Codig_Pont { get; set; }
+        public DateTime Datap_Pont { get; set; }
+        public String Horap_Pont { get; set; }
+        public virtual Funcionario Func_Pont { get; set; }
     }
 }
