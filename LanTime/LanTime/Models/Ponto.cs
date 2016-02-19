@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel;
 
 
 namespace Lantime.Models
@@ -10,11 +11,17 @@ namespace Lantime.Models
     {
         public Ponto()
         {
-            Func_Pont = new Funcionario();
+            Funcionario = new Funcionario();
         }
-        public int Codig_Pont { get; set; }
+        public int PontoId{ get; set; }
+
+        [DisplayName("Código do Ponto")]
+        public long Ponto_Codig { get; set; }
+        [DisplayName("Data do Ponto")]
         public DateTime Datap_Pont { get; set; }
-        public String Horap_Pont { get; set; }
-        public virtual Funcionario Func_Pont { get; set; }
+        [DisplayName("Hora do Ponto")]
+        public DateTime Horap_Pont { get; set; }
+        [DisplayName("Funcionário")]
+        public virtual Funcionario Funcionario { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel;
 
 namespace Lantime.Models
 {
@@ -9,11 +10,15 @@ namespace Lantime.Models
     {
         public Celular()
         {
-            Func_Celu = new Funcionario();
+            Funcionario = new Funcionario();
         }
-        
-        public int Imei_Celu { get; set; }
+        [DisplayName("Celular ID")]
+        public int CelularId { get; set; }
+        [DisplayName("IMEI")]
+        public string Imei_Celu { get; set; }
+        [DisplayName("Numero do Celular")]
         public string Nume_Celu { get; set; }
-        public virtual Funcionario Func_Celu { get; set; }
+        [DisplayName("Nome do Funcionário")]
+        public virtual Funcionario Funcionario { get; set; }
     }
 }

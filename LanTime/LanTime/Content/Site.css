@@ -22,3 +22,14 @@ select,
 textarea {
     max-width: 280px;
 }
+
+@font-face {
+    font-family: hemiHead;
+    src: url(../fonts/HEMIHEAD.TTF);
+}
+
+
+p.Titulo{
+    font-family: hemiHead;
+}
+

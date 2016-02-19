@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Lantime.Models.Celular>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Imei_Celu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nume_Celu)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imei_Celu)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nume_Celu)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CelularId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CelularId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CelularId })
+        </td>
+    </tr>
+}
+
+</table>
