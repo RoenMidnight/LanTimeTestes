@@ -156,7 +156,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\CelularsController.cs" />
+    <Compile Include="Controllers\CelularesController.cs" />
     <Compile Include="Controllers\FuncionariosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PontosController.cs" />
@@ -172,6 +172,7 @@
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\Ponto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sobrescristos\MyEditorFor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -222,12 +223,12 @@
     <Content Include="Views\Funcionarios\Details.cshtml" />
     <Content Include="Views\Funcionarios\Edit.cshtml" />
     <Content Include="Views\Funcionarios\Index.cshtml" />
-    <Content Include="Views\Celulars\Create.cshtml" />
-    <Content Include="Views\Celulars\Delete.cshtml" />
-    <Content Include="Views\Celulars\Details.cshtml" />
-    <Content Include="Views\Celulars\Edit.cshtml" />
-    <Content Include="Views\Celulars\Index.cshtml" />
     <Content Include="Views\Pontos\Index.cshtml" />
+    <Content Include="Views\Celulares\Create.cshtml" />
+    <Content Include="Views\Celulares\Delete.cshtml" />
+    <Content Include="Views\Celulares\Details.cshtml" />
+    <Content Include="Views\Celulares\Edit.cshtml" />
+    <Content Include="Views\Celulares\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

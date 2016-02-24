@@ -8,11 +8,7 @@ using System.ComponentModel;
 namespace Lantime.Models
 {
     public class Ponto
-    {
-        public Ponto()
-        {
-            Funcionario = new Funcionario();
-        }
+    {       
         public int PontoId{ get; set; }
 
         [DisplayName("Código do Ponto")]
@@ -21,7 +17,9 @@ namespace Lantime.Models
         public DateTime Datap_Pont { get; set; }
         [DisplayName("Hora do Ponto")]
         public DateTime Horap_Pont { get; set; }
+
         [DisplayName("Funcionário")]
+        public int  FuncionarioId { get; set; }
         public virtual Funcionario Funcionario { get; set; }
     }
 }

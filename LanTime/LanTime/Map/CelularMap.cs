@@ -14,9 +14,12 @@ namespace Lantime.Map
             ToTable("Celular");
             HasKey(x => x.CelularId);
 
-            Property(x => x.Imei_Celu).HasMaxLength(20).IsRequired();
+            Property(x => x.Imei_Celu).HasMaxLength(15).IsRequired();
+            Property(x => x.Nume_Celu).HasMaxLength(9).IsRequired();
 
+        
             HasRequired(x => x.Imei_Celu);
+            HasRequired(x => x.Nume_Celu);
             HasRequired(x => x.Funcionario)
                 .WithMany();
         }

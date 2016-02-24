@@ -111,4 +111,3 @@ C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Antlr3.
 C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Newtonsoft.Json.xml
 C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\obj\Debug\Lantime.dll
 C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\obj\Debug\Lantime.pdb
-C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\obj\Debug\Lantime.csprojResolveAssemblyReference.cache
