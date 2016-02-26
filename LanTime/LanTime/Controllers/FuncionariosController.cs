@@ -18,6 +18,8 @@ namespace Lantime.Controllers
         // GET: Funcionarios
         public ActionResult Index()
         {
+            ViewBag.FuncList = new SelectList(db.Funcionarios, "FuncionariosId", "Crach_Func");
+
             return View(db.Funcionarios.ToList());
         }
 

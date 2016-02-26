@@ -29,7 +29,7 @@
                 @Html.DisplayFor(modelItem => item.Horap_Pont)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Funcionario.Crach_Func)
+                @Html.DisplayFor(modelItem => item.Funcionario.Crach_Func, ViewBag.FuncList as SelectList)
             </td>
         </tr>
     }

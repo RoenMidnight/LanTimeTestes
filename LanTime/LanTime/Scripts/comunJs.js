@@ -1,4 +1,6 @@
-﻿$(".geraPonto").click(function (event) {
+﻿$('#FuncionarioId').chosen();
+
+$(".geraPonto").click(function (event) {
     event.preventDefault();
 
     $.ajax({
