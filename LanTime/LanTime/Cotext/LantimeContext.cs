@@ -19,6 +19,8 @@ namespace Lantime.Cotext
         public DbSet<Celular> Celulares { get; set; }
         public DbSet<Funcionario> Funcionarios { get; set; }
         public DbSet<Ponto> Pontos { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<LocalDeTrabalho> LocaisDeTrabalhos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

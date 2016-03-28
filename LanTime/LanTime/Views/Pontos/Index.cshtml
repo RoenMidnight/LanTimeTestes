@@ -23,13 +23,13 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Datap_Pont)
+                @String.Format("{0:d}", item.Datap_Pont)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Horap_Pont)
+                @String.Format("{0:t}", item.Horap_Pont)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Funcionario.Crach_Func, ViewBag.FuncList as SelectList)
+                @Html.DisplayFor(modelItem => item.Funcionario.Crach_Func)
             </td>
         </tr>
     }

@@ -1,0 +1,55 @@
+﻿@model Lantime.Models.Funcionario
+
+@{
+    ViewBag.Title = "Detalhes do Funcionário";
+}
+
+<h2></h2>
+
+<div>
+    <h4>Funcionario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codig_Empr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Codig_Empr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codig_Func)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codig_Func)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Crach_Func)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Crach_Func)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome_Func)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome_Func)
+        </dd>
+
+        <dd>
+            <a href="~/Pontos/Create/@Html.DisplayFor(model => model.FuncionarioId)" class="geraPonto">
+                <img src="http://chart.apis.google.com/chart?cht=qr&chl=/Pontos/Create/@Html.DisplayFor(model => model.FuncionarioId)&chs=120x120" />
+            </a>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FuncionarioId }) |
+    @Html.ActionLink("Volta a Lista", "Index")
+</p>

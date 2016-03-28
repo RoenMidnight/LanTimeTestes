@@ -25,5 +25,9 @@ namespace Lantime.Models
         [DisplayName("Ponto")]
         public virtual ICollection<Ponto>   PontoLista { get; set; }
         public virtual ICollection<Celular> CelulLista { get; set; }
+
+        [DisplayName("Empresa")]
+        public int Codig_Empr { get; set; }
+        public virtual Empresa Empresa { get; set; } 
     }
 }

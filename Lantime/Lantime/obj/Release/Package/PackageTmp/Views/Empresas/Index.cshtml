@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Lantime.Models.Empresa>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codig_Empr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Razao_Empr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ECNPJ_Empr)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codig_Empr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Razao_Empr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ECNPJ_Empr)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.EmpresaId }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.EmpresaId }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.EmpresaId })
+        </td>
+    </tr>
+}
+
+</table>

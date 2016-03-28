@@ -13,6 +13,7 @@ namespace Lantime.Map
         {
             ToTable("Funcionario");
             HasKey(x => x.FuncionarioId);
+            HasKey(x => x.Codig_Empr);
 
             Property(x => x.FuncionarioId).IsRequired();
             Property(x => x.Codig_Func).IsRequired();

@@ -58,8 +58,8 @@ namespace Lantime.Controllers
                 if (ModelState.IsValid)
                 {
                     ponto.Funcionario = funcionario;
-                    ponto.Datap_Pont = DateTime.Today;
-                    ponto.Horap_Pont = DateTime.Now;
+                    ponto.Datap_Pont = DateTime.Parse("dd/MM/yyyy");
+                    ponto.Horap_Pont = DateTime.Parse("HH:mm:ss");
                     ponto.Ponto_Codig = DateTime.Today.Ticks;
 
                     db.Pontos.Add(ponto);

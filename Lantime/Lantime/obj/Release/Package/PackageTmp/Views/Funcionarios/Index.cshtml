@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Lantime.Models.Funcionario>
+
+@{
+    ViewBag.Title = "Funcionários";
+}
+
+<h2></h2>
+
+<p>
+    @Html.ActionLink("Criar Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codig_Empr)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Codig_Func)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Crach_Func)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome_Func)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PontoLista)
+        </th>        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codig_Empr)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codig_Func)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Crach_Func)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome_Func)
+        </td>
+        <td>
+            <a href="~/Pontos/Index/@Html.DisplayFor(modelItem => item.FuncionarioId)">Ponto</a>
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.FuncionarioId }) |
+            @Html.ActionLink("Detalhe", "Details", new { id=item.FuncionarioId }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.FuncionarioId })
+        </td>
+    </tr>
+}
+
+</table>

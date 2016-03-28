@@ -1,0 +1,42 @@
+﻿@model Lantime.Models.LocalDeTrabalho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LocalDeTrabalho</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa.Razao_Empr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa.Razao_Empr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Codig_Loca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codig_Loca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descr_Loca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descr_Loca)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LocalDeTrabalhoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

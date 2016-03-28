@@ -11,6 +11,13 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.Codig_Empr)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Codig_Empr)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.Codig_Func)
         </dt>
 
@@ -35,10 +42,9 @@
         </dd>
 
         <dd>
-            <img src="http://chart.apis.google.com/chart?cht=qr&chl=/Pontos/Create/@Html.DisplayFor(model => model.FuncionarioId)&chs=120x120" />
-
-            
-            <a href="~/Pontos/Create/@Html.DisplayFor(model => model.FuncionarioId)" class="geraPonto" >Ponto</a>
+            <a href="~/Pontos/Create/@Html.DisplayFor(model => model.FuncionarioId)" class="geraPonto">
+                <img src="http://chart.apis.google.com/chart?cht=qr&chl=/Pontos/Create/@Html.DisplayFor(model => model.FuncionarioId)&chs=120x120" />
+            </a>
         </dd>
 
     </dl>

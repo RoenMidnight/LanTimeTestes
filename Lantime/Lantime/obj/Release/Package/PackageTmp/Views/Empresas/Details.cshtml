@@ -1,0 +1,42 @@
+﻿@model Lantime.Models.Empresa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Empresa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Codig_Empr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Codig_Empr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Razao_Empr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Razao_Empr)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ECNPJ_Empr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ECNPJ_Empr)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpresaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

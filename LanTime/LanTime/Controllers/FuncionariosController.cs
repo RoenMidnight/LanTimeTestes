@@ -19,7 +19,7 @@ namespace Lantime.Controllers
         public ActionResult Index()
         {
             ViewBag.FuncList = new SelectList(db.Funcionarios, "FuncionariosId", "Crach_Func");
-
+            
             return View(db.Funcionarios.ToList());
         }
 
@@ -49,8 +49,15 @@ namespace Lantime.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "FuncionarioId,Codig_Func,Crach_Func,Nome_Func")] Funcionario funcionario)
+        public ActionResult Create([Bind(Include = "FuncionarioId,Codig_Func,Crach_Func,Nome_Func,Codig_Empr")] Funcionario funcionario)
         {
+
+            Empresa empresa = db.Empresas.Find(funcionario.Codig_Empr);
+
+            if (empresa == null) {
+                return View(funcionario);
+            }
+
             if (ModelState.IsValid)
             {
                 db.Funcionarios.Add(funcionario);
@@ -81,7 +88,7 @@ namespace Lantime.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "FuncionarioId,Codig_Func,Crach_Func,Nome_Func")] Funcionario funcionario)
+        public ActionResult Edit([Bind(Include = "FuncionarioId,Codig_Func,Crach_Func,Nome_Func,Codig_Empr")] Funcionario funcionario)
         {
             if (ModelState.IsValid)
             {

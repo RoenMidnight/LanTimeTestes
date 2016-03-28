@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Lantime.Models.Ponto>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Ponto</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Datap_Pont)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Horap_Pont)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Funcionario.Crach_Func)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @String.Format("{0:d}", item.Datap_Pont)
+            </td>
+            <td>
+                @String.Format("{0:t}", item.Horap_Pont)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Funcionario.Crach_Func)
+            </td>
+        </tr>
+    }
+
+</table>
+
+

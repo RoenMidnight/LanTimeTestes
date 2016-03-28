@@ -112,3 +112,14 @@ C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Newtons
 C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\obj\Debug\Lantime.dll
 C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\obj\Debug\Lantime.pdb
 C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\obj\Debug\Lantime.csprojResolveAssemblyReference.cache
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.dll
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.Security.dll
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Owin.dll
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.xml
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.Security.xml
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Bruno\Documents\Visual Studio 2015\Projects\Lantime\Lantime\bin\Microsoft.Owin.Security.OAuth.xml
